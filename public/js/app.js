@@ -28,7 +28,7 @@ function getWeatherData(location) {
                 return;
             }
             console.log(data);
-            m1.textContent = `There is currently ${data.temperature} degree and it feels like is ${data.feelslike} degrees`;
+            m1.textContent = `There is currently ${data.temperature} degree, it feels like is ${data.feelslike} degrees and humidity is ${data.humidity}%`;
             m2.textContent = `The forecast is for ${data.place}`;
         });
     });
